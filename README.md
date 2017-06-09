@@ -31,4 +31,30 @@ npm install --save @angular/material @angular/animations
 ```
 '@angular/material':'npm:@angular/material/bundles/material.umd.js',
 '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js'
- ```
+```
+ 
+ 
+### 3
+KENG  
+must add HttpModule in app.module.ts
+```
+'@angular/material':'npm:@angular/material/bundles/material.umd.js',
+'@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js'
+
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import {MaterialModule} from '@angular/material';
+import { MessagesComponent} from './messages.component';
+import { AppComponent }  from './app.component';
+import {HttpModule} from '@angular/http';
+import { WebService} from './web.service';
+
+@NgModule({
+  imports:      [ BrowserModule,MaterialModule,HttpModule ],
+  declarations: [ AppComponent,MessagesComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [WebService]
+})
+export class AppModule { }
+```
+ 
