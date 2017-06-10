@@ -58,3 +58,11 @@ import { WebService} from './web.service';
 export class AppModule { }
 ```
  
+
+## 5. Creating a Form in Angular
+### 1
+must install typesctipt 2.2.2 in global and in project
+```
+npm install -g typescript@2.2.2 
+npm install typescript@2.2.2 -D
+```
