@@ -66,3 +66,12 @@ must install typesctipt 2.2.2 in global and in project
 npm install -g typescript@2.2.2 
 npm install typescript@2.2.2 -D
 ```
+
+#### 05:00
+add this in systemjs.config.js
+```
+'@angular/material':'npm:@angular/material/bundles/material.umd.js',
+'@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js',
+'@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.js',
+'@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js'
+```
