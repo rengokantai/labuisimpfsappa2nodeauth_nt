@@ -75,3 +75,6 @@ add this in systemjs.config.js
 '@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.js',
 '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js'
 ```
+## 6.
+### 2
+So if by any chance you're missing this line, make sure you add that.
